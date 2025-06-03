@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-D CA</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body style="background-color:black;margin:20px;font-family:baskerville;color:gray;">
+  <div 
+    style="color:lightgray;
+      font-family:baskerville; 
+      font-size: 25px"> 
+    an interactive museum<font color="red">*</font>
+    <br>
+    of 2D cellular automata<font color="red"><sup>†</sup></font></div>
+    <div style="color:dimgrey;margin:0px 0px 0px 150px;"><font color="red">* </font> you may interact with the exhibits by touching or clicking; the point is to amuse, by implicating, the user (<a href=#why>why interact?</a>)</div> <div style="color:dimgrey;margin:0px 0px 0px 150px;"><font color="red">† </font> in the words of Norman H. Packard and Stephen Wolfram, we are dealing specifically with "outer totalistic" 2-D CA (<a href=#what>what's that?</a>)</div> 
+<br>
+<div id="nav" style="maxheight:25 px; color:red; text-align:center; font-size: 18px">
+<a href="#" onclick="previous()">←</a> &nbsp; | &nbsp; <a title="go to random rule?" href='#' onclick="rando()" id="label"></a> &nbsp; | &nbsp; <a href='#' onclick='next()'>→</a>
+</div>
+<div id="canvas" style="display: flex; justify-content: center;touch-action: none;">
+</div>
+
+<script src="/sketch.js">
+</script>
+
+<div style="color:lightgray; font-size: 18 px; text-align:center" id="reset">☀ |  ◐  | ☾</div >
+
+<br>
+<p style="color:dimgray; font-size: 18 px; text-align:center">index of rules</p>
+<div id="index" style="margin:auto; width: 500px; justify-content: center; text-align: center;
+	font-size: 10px;"></div>
+</body>
+
+</html>
